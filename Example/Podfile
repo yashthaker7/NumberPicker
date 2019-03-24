@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NumberPicker_Example' do
+  pod 'NumberPicker', :path => '../'
+
+  target 'NumberPicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
