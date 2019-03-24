@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tDL-Xr-cep">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="j7o-TE-AHr">
+            <objects>
+                <viewController id="tDL-Xr-cep" customClass="ViewController" customModule="NumberPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W5O-Al-kCE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc4-T5-plx">
+                                <rect key="frame" x="162.66666666666666" y="712" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="VI0-ZC-GnI"/>
+                                    <constraint firstAttribute="height" constant="50" id="jrA-rQ-4m8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="weight"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="tDL-Xr-cep" eventType="touchUpInside" id="iib-74-x6Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.14690758812595422" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wc4-T5-plx" firstAttribute="bottom" secondItem="Sdl-Wy-bCt" secondAttribute="bottom" constant="-16" id="FMn-qx-R0q"/>
+                            <constraint firstItem="wc4-T5-plx" firstAttribute="centerX" secondItem="W5O-Al-kCE" secondAttribute="centerX" id="ZfL-i6-IyV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sdl-Wy-bCt"/>
+                    </view>
+                    <connections>
+                        <outlet property="selectWeight" destination="wc4-T5-plx" id="nxI-1o-P7t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5y-op-fVL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1423" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weight" width="50" height="50"/>
+    </resources>
+</document>

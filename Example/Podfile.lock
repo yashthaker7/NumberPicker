@@ -1,0 +1,16 @@
+PODS:
+  - NumberPicker (0.7.0)
+
+DEPENDENCIES:
+  - NumberPicker (from `../`)
+
+EXTERNAL SOURCES:
+  NumberPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NumberPicker: f58994650b540db4bdd096b65f280be4cd16da35
+
+PODFILE CHECKSUM: aeb8057855865839508b75d061cc65312321372a
+
+COCOAPODS: 1.6.1

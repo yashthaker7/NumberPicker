@@ -1,0 +1,6 @@
+framework module NumberPicker {
+  umbrella header "NumberPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
