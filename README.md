@@ -1,12 +1,11 @@
 # NumberPicker
-
-[![CI Status](https://img.shields.io/travis/Yash Thaker/NumberPicker.svg?style=flat)](https://travis-ci.org/Yash Thaker/NumberPicker)
 [![Version](https://img.shields.io/cocoapods/v/NumberPicker.svg?style=flat)](https://cocoapods.org/pods/NumberPicker)
 [![License](https://img.shields.io/cocoapods/l/NumberPicker.svg?style=flat)](https://cocoapods.org/pods/NumberPicker)
 [![Platform](https://img.shields.io/cocoapods/p/NumberPicker.svg?style=flat)](https://cocoapods.org/pods/NumberPicker)
 
+A more interactive way to display and select number.
 
-<img src="ScreenShot/numberPicker1.gif" width="300"><img src="ScreenShot/numberPicker2.gif" width="300">
+<img src="https://github.com/yashthaker7/NumberPicker/blob/master/ScreenShot/numberPicker1.gif" width="300"><img src="https://github.com/yashthaker7/NumberPicker/blob/master/ScreenShot/numberPicker2.gif" width="300">
 
 ## Installation
 

@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/yashthaker7/NumberPicker.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/yashthaker7'
     
-    s.platform = :ios, '11.0'
     s.ios.deployment_target = '11.0'
-    s.swift_version = '4.2'
     
     s.source_files = 'NumberPicker/Classes/**/*'
     
