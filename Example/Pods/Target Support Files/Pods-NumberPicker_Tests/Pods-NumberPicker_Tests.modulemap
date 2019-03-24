@@ -1,0 +1,6 @@
+framework module Pods_NumberPicker_Tests {
+  umbrella header "Pods-NumberPicker_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

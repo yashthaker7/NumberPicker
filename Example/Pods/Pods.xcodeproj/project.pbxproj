@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		120FC1A026674FC5ABC6B2BBE8565742 /* NumberPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED0D607A4594287790162FD8D3BC0B8 /* NumberPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8017B746B952727572B99142CE8C7F99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		B0BF0026F9F4EDC7ACE93423912BF3BD /* Pods-NumberPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B438266A21A850056F372256170CD5 /* Pods-NumberPicker_Example-dummy.m */; };
+		BBFDD91636C81529C0F8E9B5902A2B07 /* Pods-NumberPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A731A6D70F32D7934E1C0C5F50C9EA95 /* Pods-NumberPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3F4A7AE2247960900296D73 /* NumberPickerLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F4A7AB2247960900296D73 /* NumberPickerLineCell.swift */; };
+		D3F4A7AF2247960900296D73 /* NumberPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F4A7AC2247960900296D73 /* NumberPicker.swift */; };
+		D3F4A7B02247960900296D73 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F4A7AD2247960900296D73 /* UIView+Extensions.swift */; };
+		D3F4A7B32247984300296D73 /* NumberPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F4A7B22247984300296D73 /* NumberPicker.xcassets */; };
+		EDC497D991CAA166D26B51A1A23237EE /* NumberPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9E00701F02895382498325B92CB80 /* NumberPicker-dummy.m */; };
+		F98706E88B54EA5C1417677FC766125B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		128374F95B4271D09A79ECE91BC7FC2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FAF98D692419BA07E0E39E89869000D;
+			remoteInfo = NumberPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22596F1DFA430491734B7C3C37EDE85E /* Pods_NumberPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumberPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A65FEAD98F174F56EA90323C1E8B81 /* NumberPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NumberPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29E45DDCBE7EFF2D15CCA414C4394A17 /* Pods-NumberPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NumberPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C45F72361273879955762E11C17E6B2 /* NumberPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NumberPicker-prefix.pch"; sourceTree = "<group>"; };
+		2DD70E4B11C957024F465C9B4FCC5BD4 /* Pods-NumberPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NumberPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F41FD7561196E7E0AEEDDDAA7F52553 /* NumberPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NumberPicker.modulemap; sourceTree = "<group>"; };
+		3623D3FC4E278E43F6FB24AD13CE2EB3 /* Pods-NumberPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NumberPicker_Example.modulemap"; sourceTree = "<group>"; };
+		3795ED4500C4B6DA977E85A10CC78600 /* Pods-NumberPicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NumberPicker_Tests-Info.plist"; sourceTree = "<group>"; };
+		39062B6DCE5B306C74C52DF9A1A68A69 /* Pods-NumberPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NumberPicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		3ED0D607A4594287790162FD8D3BC0B8 /* NumberPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NumberPicker-umbrella.h"; sourceTree = "<group>"; };
+		42CC1DA8FC3FE814E4CD952040F4577B /* Pods-NumberPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NumberPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		43903F307B7AD1D9DAD1D20E7FB3C2E0 /* Pods-NumberPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NumberPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C889F7BF551CF9226734D9C3ABADCF4 /* Pods-NumberPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NumberPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		59446408B8A15109F79FC6006704A5AA /* Pods-NumberPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NumberPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A72E82E621709252A57AA3CDB6F3183 /* Pods-NumberPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NumberPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5D62588678632F1FD4F8FDBEBB68459F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6345F4483C5E870215809DA6ABA70358 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7BC31FEF33F61C5EC923F0CAAA6DA315 /* NumberPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NumberPicker-Info.plist"; sourceTree = "<group>"; };
+		8ED20EE585C60BE824D6A144EE4F9094 /* NumberPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NumberPicker.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B438266A21A850056F372256170CD5 /* Pods-NumberPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NumberPicker_Example-dummy.m"; sourceTree = "<group>"; };
+		A731A6D70F32D7934E1C0C5F50C9EA95 /* Pods-NumberPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NumberPicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		B4A7EFABD8B04000FB9B7A7A4E12E8E2 /* Pods-NumberPicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NumberPicker_Example-Info.plist"; sourceTree = "<group>"; };
+		C14E0F54798E1A9E2B9431CA71D14C87 /* Pods-NumberPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NumberPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1C15E58C0A2EFF1FC6D7286C065BE8D /* Pods-NumberPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NumberPicker_Tests.modulemap"; sourceTree = "<group>"; };
+		D3F4A7AB2247960900296D73 /* NumberPickerLineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberPickerLineCell.swift; path = NumberPicker/Classes/NumberPickerLineCell.swift; sourceTree = "<group>"; };
+		D3F4A7AC2247960900296D73 /* NumberPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberPicker.swift; path = NumberPicker/Classes/NumberPicker.swift; sourceTree = "<group>"; };
+		D3F4A7AD2247960900296D73 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "NumberPicker/Classes/UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D3F4A7B22247984300296D73 /* NumberPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = NumberPicker.xcassets; path = NumberPicker/Assets/NumberPicker.xcassets; sourceTree = "<group>"; };
+		D61F43FE8AD58A4E0061E2BE9745D2A4 /* NumberPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NumberPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D9AC05D4B56B8C48E0310300812039DF /* Pods-NumberPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NumberPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F73D9A459F24EFFE318F19BBAC2195B3 /* Pods-NumberPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NumberPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F7C9E00701F02895382498325B92CB80 /* NumberPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NumberPicker-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E04361048CFFAEEDBBBE31D8715306C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98706E88B54EA5C1417677FC766125B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84EE1F76FF2AB7A33196DBE85DE8E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8017B746B952727572B99142CE8C7F99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		291AA71B046F8BB885213E2784A0A3E1 /* Pods-NumberPicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3623D3FC4E278E43F6FB24AD13CE2EB3 /* Pods-NumberPicker_Example.modulemap */,
+				59446408B8A15109F79FC6006704A5AA /* Pods-NumberPicker_Example-acknowledgements.markdown */,
+				29E45DDCBE7EFF2D15CCA414C4394A17 /* Pods-NumberPicker_Example-acknowledgements.plist */,
+				A0B438266A21A850056F372256170CD5 /* Pods-NumberPicker_Example-dummy.m */,
+				C14E0F54798E1A9E2B9431CA71D14C87 /* Pods-NumberPicker_Example-frameworks.sh */,
+				B4A7EFABD8B04000FB9B7A7A4E12E8E2 /* Pods-NumberPicker_Example-Info.plist */,
+				A731A6D70F32D7934E1C0C5F50C9EA95 /* Pods-NumberPicker_Example-umbrella.h */,
+				5A72E82E621709252A57AA3CDB6F3183 /* Pods-NumberPicker_Example.debug.xcconfig */,
+				4C889F7BF551CF9226734D9C3ABADCF4 /* Pods-NumberPicker_Example.release.xcconfig */,
+			);
+			name = "Pods-NumberPicker_Example";
+			path = "Target Support Files/Pods-NumberPicker_Example";
+			sourceTree = "<group>";
+		};
+		2DFADFB5FB8E767F1115B75B0DDA7ACA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F41FD7561196E7E0AEEDDDAA7F52553 /* NumberPicker.modulemap */,
+				8ED20EE585C60BE824D6A144EE4F9094 /* NumberPicker.xcconfig */,
+				F7C9E00701F02895382498325B92CB80 /* NumberPicker-dummy.m */,
+				7BC31FEF33F61C5EC923F0CAAA6DA315 /* NumberPicker-Info.plist */,
+				2C45F72361273879955762E11C17E6B2 /* NumberPicker-prefix.pch */,
+				3ED0D607A4594287790162FD8D3BC0B8 /* NumberPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NumberPicker";
+			sourceTree = "<group>";
+		};
+		33752544317EDF3AF4E59EA5EEAFDC65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29A65FEAD98F174F56EA90323C1E8B81 /* NumberPicker.framework */,
+				22596F1DFA430491734B7C3C37EDE85E /* Pods_NumberPicker_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BEBF793345B49D57361628A77AF187B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96926F5BF4A18F09393870E88FB2803F /* NumberPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		78CEC6C8FE8EAC9A46196E48CFDC8583 /* Pods-NumberPicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D1C15E58C0A2EFF1FC6D7286C065BE8D /* Pods-NumberPicker_Tests.modulemap */,
+				43903F307B7AD1D9DAD1D20E7FB3C2E0 /* Pods-NumberPicker_Tests-acknowledgements.markdown */,
+				2DD70E4B11C957024F465C9B4FCC5BD4 /* Pods-NumberPicker_Tests-acknowledgements.plist */,
+				39062B6DCE5B306C74C52DF9A1A68A69 /* Pods-NumberPicker_Tests-dummy.m */,
+				3795ED4500C4B6DA977E85A10CC78600 /* Pods-NumberPicker_Tests-Info.plist */,
+				D9AC05D4B56B8C48E0310300812039DF /* Pods-NumberPicker_Tests-umbrella.h */,
+				42CC1DA8FC3FE814E4CD952040F4577B /* Pods-NumberPicker_Tests.debug.xcconfig */,
+				F73D9A459F24EFFE318F19BBAC2195B3 /* Pods-NumberPicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-NumberPicker_Tests";
+			path = "Target Support Files/Pods-NumberPicker_Tests";
+			sourceTree = "<group>";
+		};
+		96926F5BF4A18F09393870E88FB2803F /* NumberPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D3F4A7AC2247960900296D73 /* NumberPicker.swift */,
+				D3F4A7AB2247960900296D73 /* NumberPickerLineCell.swift */,
+				D3F4A7AD2247960900296D73 /* UIView+Extensions.swift */,
+				D3F4A7B22247984300296D73 /* NumberPicker.xcassets */,
+				E277FFE20C460A5BC3902CEB4F1A4929 /* Pod */,
+				2DFADFB5FB8E767F1115B75B0DDA7ACA /* Support Files */,
+			);
+			name = NumberPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3BEBF793345B49D57361628A77AF187B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				33752544317EDF3AF4E59EA5EEAFDC65 /* Products */,
+				EBD0E4EF0357C641AEC28FD7165150B7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E277FFE20C460A5BC3902CEB4F1A4929 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5D62588678632F1FD4F8FDBEBB68459F /* LICENSE */,
+				D61F43FE8AD58A4E0061E2BE9745D2A4 /* NumberPicker.podspec */,
+				6345F4483C5E870215809DA6ABA70358 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EBD0E4EF0357C641AEC28FD7165150B7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				291AA71B046F8BB885213E2784A0A3E1 /* Pods-NumberPicker_Example */,
+				78CEC6C8FE8EAC9A46196E48CFDC8583 /* Pods-NumberPicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A6177EC3643514CE7AAFF5B78A3E9CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120FC1A026674FC5ABC6B2BBE8565742 /* NumberPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42963C9BFD312AD1D3D30ECB42FE298 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFDD91636C81529C0F8E9B5902A2B07 /* Pods-NumberPicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4FAF98D692419BA07E0E39E89869000D /* NumberPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97AE09F1F468ECFA5043E91C32509824 /* Build configuration list for PBXNativeTarget "NumberPicker" */;
+			buildPhases = (
+				4A6177EC3643514CE7AAFF5B78A3E9CA /* Headers */,
+				41360B5C2940FBAFB91F3C73C93C667E /* Sources */,
+				A84EE1F76FF2AB7A33196DBE85DE8E00 /* Frameworks */,
+				4FEB1F3F8A3ECA6B7AC42971D55DBED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NumberPicker;
+			productName = NumberPicker;
+			productReference = 29A65FEAD98F174F56EA90323C1E8B81 /* NumberPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6473A09D0371DF87DB6CD049C00ADF07 /* Pods-NumberPicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70B421A1CA6E85204BC604DFA883A3B8 /* Build configuration list for PBXNativeTarget "Pods-NumberPicker_Example" */;
+			buildPhases = (
+				F42963C9BFD312AD1D3D30ECB42FE298 /* Headers */,
+				A8D8E08F33B76767B064F60BA1C77733 /* Sources */,
+				9E04361048CFFAEEDBBBE31D8715306C /* Frameworks */,
+				F87CF226626028031A198416AF00534D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1329BC5121E8235DD8801FDFBE13C501 /* PBXTargetDependency */,
+			);
+			name = "Pods-NumberPicker_Example";
+			productName = "Pods-NumberPicker_Example";
+			productReference = 22596F1DFA430491734B7C3C37EDE85E /* Pods_NumberPicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					4FAF98D692419BA07E0E39E89869000D = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 33752544317EDF3AF4E59EA5EEAFDC65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FAF98D692419BA07E0E39E89869000D /* NumberPicker */,
+				6473A09D0371DF87DB6CD049C00ADF07 /* Pods-NumberPicker_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FEB1F3F8A3ECA6B7AC42971D55DBED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F4A7B32247984300296D73 /* NumberPicker.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87CF226626028031A198416AF00534D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41360B5C2940FBAFB91F3C73C93C667E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F4A7B02247960900296D73 /* UIView+Extensions.swift in Sources */,
+				EDC497D991CAA166D26B51A1A23237EE /* NumberPicker-dummy.m in Sources */,
+				D3F4A7AE2247960900296D73 /* NumberPickerLineCell.swift in Sources */,
+				D3F4A7AF2247960900296D73 /* NumberPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D8E08F33B76767B064F60BA1C77733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BF0026F9F4EDC7ACE93423912BF3BD /* Pods-NumberPicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1329BC5121E8235DD8801FDFBE13C501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NumberPicker;
+			target = 4FAF98D692419BA07E0E39E89869000D /* NumberPicker */;
+			targetProxy = 128374F95B4271D09A79ECE91BC7FC2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21B6B3687F2C1543E85619FFE5796CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED20EE585C60BE824D6A144EE4F9094 /* NumberPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NumberPicker/NumberPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NumberPicker/NumberPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NumberPicker/NumberPicker.modulemap";
+				PRODUCT_MODULE_NAME = NumberPicker;
+				PRODUCT_NAME = NumberPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36127BBA793FC721A23003DAEFC3C983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C889F7BF551CF9226734D9C3ABADCF4 /* Pods-NumberPicker_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NumberPicker_Example/Pods-NumberPicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NumberPicker_Example/Pods-NumberPicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C72ADF8432B478820C86A708443492E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED20EE585C60BE824D6A144EE4F9094 /* NumberPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NumberPicker/NumberPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NumberPicker/NumberPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NumberPicker/NumberPicker.modulemap";
+				PRODUCT_MODULE_NAME = NumberPicker;
+				PRODUCT_NAME = NumberPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D65C9B11FEB60B40ECD0F60D1527444A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A72E82E621709252A57AA3CDB6F3183 /* Pods-NumberPicker_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NumberPicker_Example/Pods-NumberPicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NumberPicker_Example/Pods-NumberPicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70B421A1CA6E85204BC604DFA883A3B8 /* Build configuration list for PBXNativeTarget "Pods-NumberPicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C9B11FEB60B40ECD0F60D1527444A /* Debug */,
+				36127BBA793FC721A23003DAEFC3C983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97AE09F1F468ECFA5043E91C32509824 /* Build configuration list for PBXNativeTarget "NumberPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72ADF8432B478820C86A708443492E8 /* Debug */,
+				21B6B3687F2C1543E85619FFE5796CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
