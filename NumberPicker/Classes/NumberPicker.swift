@@ -20,6 +20,9 @@ public class NumberPicker: UIViewController {
     public var tintColor = UIColor.black
     public var heading = ""
     public var defaultSelectedNumber: Int = 0
+    public var stonesLbs = false
+    public var ftInches = false
+    public var unit = "" 
     
     var bgView, pickerView: UIView!
     var cancelBtn, doneBtn: UIButton!
@@ -71,7 +74,19 @@ public class NumberPicker: UIViewController {
     
     var selectedNumber: Int = 0 {
         didSet {
-            self.numberLbl.text = "\(selectedNumber)"
+            if stonesLbs == false && ftInches == false {
+                self.numberLbl.text = "\(selectedNumber)\(unit)"          
+            } else if stonesLbs == true {
+                let stones = Double(selectedNumber / 14)
+                let stonesRounded = Int(floor(stones))
+                let poundsCalc = stonesRounded * 14
+                numberLbl.text = "\(stonesRounded)st \(selectedNumber - poundsCalc)lb"    
+            } else {   
+                let feet = Double(selectedNumber / 12)
+                let feetRounded = Int(floor(feet))
+                let inchesCalc = feetRounded * 12
+                numberLbl.text = "\(feetRounded)ft \(selectedNumber - inchesCalc)in"       
+            }
         }
     }
     
