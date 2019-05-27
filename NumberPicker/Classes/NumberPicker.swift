@@ -2,24 +2,26 @@
 //  NumberPicker.swift
 //  NumberPicker
 //
-//  Created by Yash Thaker on 20/10/18.
+//  Created by Yash Thaker on 20/10/18. Improved by Ivan Taranov on 27/05/19
 //  Copyright © 2018 Yash Thaker. All rights reserved.
 //
 
 import UIKit
 
 public protocol NumberPickerDelegate {
-    func selectedNumber(_ number: Int)
+    func selectedNumber(_ number: Double)
 }
 
 public class NumberPicker: UIViewController {
     
     public var delegate: NumberPickerDelegate!
-    public var maxNumber: Int!
+    public var maxNumber: Double!
+    public var minNumber = 40.0
     public var bgGradients: [UIColor] = [.white, .white]
     public var tintColor = UIColor.black
     public var heading = ""
-    public var defaultSelectedNumber: Int = 0
+    public var defaultSelectedNumber: Double = 0
+    var step: Double = 1
     
     var bgView, pickerView: UIView!
     var cancelBtn, doneBtn: UIButton!
@@ -56,9 +58,9 @@ public class NumberPicker: UIViewController {
     }
     
     let cellId = "cellId"
-
+    
     lazy var arrowImageView: UIImageView = {
-        let img: UIImage = getImageFromBundle("arrow")
+        let img: UIImage = getBundleImage("arrow")
         let imgView = UIImageView(image: img.withRenderingMode(.alwaysTemplate))
         imgView.translatesAutoresizingMaskIntoConstraints = false
         imgView.tintColor = tintColor
@@ -69,15 +71,16 @@ public class NumberPicker: UIViewController {
     // this is for iphone x
     var bottomPadding: CGFloat = 0.0
     
-    var selectedNumber: Int = 0 {
+    var selectedNumber: Double = 0 {
         didSet {
             self.numberLbl.text = "\(selectedNumber)"
         }
     }
     
-    public init(delegate: NumberPickerDelegate, maxNumber: Int) {
+    public init(delegate: NumberPickerDelegate, maxNumber: Double, step: Double) {
         self.delegate = delegate
         self.maxNumber = maxNumber
+        self.step = step
         super.init(nibName: nil, bundle: nil)
         self.modalPresentationStyle = .overCurrentContext
         self.modalTransitionStyle = .crossDissolve
@@ -95,7 +98,7 @@ public class NumberPicker: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
             self.animatePickerView()
-            self.scrollToDefaultNumber(self.defaultSelectedNumber)
+            self.scrollToDefaultNumber((self.defaultSelectedNumber - self.minNumber) / self.step)
         }
     }
     
@@ -107,8 +110,8 @@ public class NumberPicker: UIViewController {
         pickerView = createView()
         pickerView.layer.masksToBounds = true
         
-        cancelBtn = createBtn(getImageFromBundle("cancel"))
-        doneBtn = createBtn(getImageFromBundle("done"))
+        cancelBtn = createBtn(getBundleImage("cancel"))
+        doneBtn = createBtn(getBundleImage("done"))
         doneBtn.tag = 99
         
         titleLbl = createLabel(heading, fontSize: 18)
@@ -174,9 +177,10 @@ public class NumberPicker: UIViewController {
         arrowImageView.centerYAnchor.constraint(equalTo: pickerView.centerYAnchor, constant: 32 - bottomPadding/2).isActive = true
     }
     
-    func scrollToDefaultNumber(_ number: Int) {
+    func scrollToDefaultNumber(_ number: Double) {
+        // TODO: refactor it
         if number <= 0 { return }
-        if number > maxNumber { return }
+        if number > maxNumber / step { return }
         let offset = CGPoint(x: CGFloat(number) * cellWidthIncludingSpacing - collectionView.contentInset.left, y: -collectionView.contentInset.top)
         collectionView.setContentOffset(offset, animated: true)
     }
@@ -186,7 +190,7 @@ public class NumberPicker: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
             self.dismiss(animated: true, completion: {
                 if sender.tag == 99 {
-                    self.delegate.selectedNumber(self.selectedNumber)
+                    self.delegate.selectedNumber(Double(self.selectedNumber))
                 }
             })
         }
@@ -206,7 +210,7 @@ public class NumberPicker: UIViewController {
         isPickerOpen = !isPickerOpen
         
         UIView.animate(withDuration: animationDuration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
-         
+            
             self.view.layoutIfNeeded()
         })
         
@@ -249,7 +253,7 @@ public class NumberPicker: UIViewController {
         return btn
     }
     
-    func getImageFromBundle(_ name: String) -> UIImage {
+    func getBundleImage(_ name: String) -> UIImage {
         let primaryBundle = Bundle(for: NumberPicker.self)
         if let image = UIImage(named: name, in: primaryBundle, compatibleWith: nil) {
             return image
@@ -275,7 +279,7 @@ public class NumberPicker: UIViewController {
 extension NumberPicker: UICollectionViewDelegate, UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return maxNumber + 1
+        return Int(Double((maxNumber + 1 - minNumber)) / step)
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -303,9 +307,9 @@ extension NumberPicker: UIScrollViewDelegate {
         
         let offset = scrollView.contentOffset
         let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludingSpacing
-        let roundedIndex = round(index)
+        let roundedIndex = round((minNumber + Double(index) * step) * 10) / 10.0
         
-        selectedNumber = roundedIndex <= 0 ? 0 : Int(roundedIndex)
+        selectedNumber = roundedIndex <= 0.0 ? 0.0 : roundedIndex
     }
 }
 

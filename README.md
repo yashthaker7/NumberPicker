@@ -50,6 +50,10 @@ extension ViewController: NumberPickerDelegate {
 
 Yash Thaker, yashthaker7@gmail.com
 
+## Contributors
+
+Ivan Taranov, korsour@gmail.com
+
 ## License
 
 NumberPicker is available under the MIT license. See the LICENSE file for more info.
